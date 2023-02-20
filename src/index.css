@@ -30,9 +30,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 1rem;
-  background-color: var(--main-color);
-  background: rgb(203,244,238);
-  background: linear-gradient(166deg, rgba(203,244,238,1) 0%, rgba(126,246,202,1) 48%, rgba(118,249,228,1) 65%, rgba(203,244,238,1) 100%);
+  background: 
+  linear-gradient(166deg, rgba(181, 247, 237, 0.6) 0%, rgba(107, 249, 197, 0.6) 48%, rgba(72, 247, 218, 0.6) 65%,rgba(181, 247, 237, 0.6) 100%), 
+  url("./assets/css-effects/noise.svg");
+  /* background-image: url("./assets/css-effects/noise.svg"); */
   font-size: 1.4rem;;
 }
 
