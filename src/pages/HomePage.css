@@ -1,0 +1,21 @@
+#header-wrapper {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+#header-wrapper p {
+  font-size: 1.6rem;
+}
+
+#title-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#logo {
+  width: 14rem;
+  height: 14rem;
+}

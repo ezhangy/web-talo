@@ -1,0 +1,24 @@
+.Navbar {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.4rem;
+  margin-top: 0.5rem;
+  padding: 1.5rem 4rem;
+  font-size: 1.2rem;
+  border-bottom: 0.15rem solid var(--navbar-color);
+}
+
+.Navbar .active{
+  color: #02584b;
+  font-weight: bolder;
+}
+
+.Navbar a {
+  color: black;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+
+
+
