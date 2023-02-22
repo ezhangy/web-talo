@@ -1,11 +1,10 @@
 .Navbar {
   display: flex;
-  justify-content: flex-end;
-  gap: 1.4rem;
-  margin-top: 0.5rem;
-  padding: 1.5rem 4rem;
+  justify-content: space-between;
+  align-items: center;
   font-size: 1.2rem;
   border-bottom: 0.15rem solid var(--navbar-color);
+  padding: 0.5rem 2rem;
 }
 
 .Navbar .active{
@@ -17,6 +16,16 @@
   color: black;
   font-weight: 400;
   text-decoration: none;
+}
+
+.Navbar #navbar-logo-option {
+  max-width: 6rem;
+  max-height: 6rem;
+}
+
+.Navbar #navbar-options {
+  display: flex;
+  gap: 1.4rem;
 }
 
 

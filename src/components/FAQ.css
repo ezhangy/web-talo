@@ -9,13 +9,41 @@
   font-weight: 600;
 }
 
+.faq-question {
+  width: 100%;
+  background-color: transparent;
+  text-align: left;
+  color: black;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 1rem 0;
+  border-bottom: 0.08rem solid var(--main-accent-color);
+  border-radius: 0;
+}
+
+.faq-question:hover {
+  opacity: 50%;
+}
+
+.faq-question:after {
+  content: "+";
+  font-size: 1.8rem;
+  margin-right: 1rem;
+  float: right;
+}
+
+.faq .active:after {
+  content: "-";
+}
+
+
 .faq-answer {
   display: flex;
   flex-direction: column;
   gap: 1em;
 }
 
-hr {
+/* hr {
   border: 0.08rem solid var(--main-accent-color);
 }
-
+ */
