@@ -1,10 +1,10 @@
-# Will I need to worry about union dues?
+## Will I need to worry about union dues?
 - Nobody pays dues until our first union contract is ratified by a majority of TAs.
 - Dues will be equivalent to ~1.6% of your paycheck. This will fund the support you’ll receive from professional organizers and the union team with collective bargaining, campaigns, legal protection, and more as needed, throughout your time as a union member.
 - When Brown recognizes our union, we will collectively bargain a new union contract subject to an approval vote of all union members. - This contract will include a wage increase that will be AT LEAST the cost of dues (and we’ll fight for much more!). There’s NO UNIVERSE where you’ll be earning less with a union.
 - Again: this contract ought to include wage increases to cover the cost of dues; if it doesn’t, as a union member, you can and should vote it down!
 
-# What if I’m an international student?
+## What if I’m an international student?
 
 (see more at [Student Workers of Columbia](https://www.studentworkersofcolumbia.com/frequently-asked-questions))
 
@@ -18,7 +18,7 @@ Political activities such as picketing, rallies, leafleting, demonstrations, etc
 
 All foreign students enjoy the same rights to freedom of expression and freedom of association as U.S. nationals. Federal law protects your right to join a union. The only relevant restriction on political activity by foreign students is that they cannot make financial contributions to political organizations in the United States.
 
-# What’s wrong with internal channels to create change, like speaking with our professors, department leadership, or UCS? Why do we need to be so extreme?
+## What’s wrong with internal channels to create change, like speaking with our professors, department leadership, or UCS? Why do we need to be so extreme?
 
 - There is not currently an avenue for TAs to voice their concerns and represent themselves without facing potential employer backlash or increased tensions in their workplace/within their staff. 
 - While MTAs do their best to advocate for TAs, they are ultimately a small staff of 2-4 undergraduates themselves, and shouldn’t shoulder the burden of advocating for a large group of diverse TAs.  

@@ -1,0 +1,76 @@
+.Navbar {
+  display: flex;
+  background-color: var(--talo-green);
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  border-bottom: 0.15rem solid var(--navbar-color);
+  padding: 0.5rem 2rem;
+}
+
+.Navbar .active{
+  color: white;
+  font-weight: bolder;
+}
+
+.Navbar a {
+  color: rgba(255, 253, 253, 0.728);
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.Navbar #navbar-logo-option {
+  max-width: 6rem;
+  max-height: 6rem;
+}
+
+.navbar-options {
+  display: flex;
+  gap: 3rem;
+  padding-right: 4em;
+}
+
+#menu-trigger {
+  display: none;
+  padding: 0;
+}
+
+#hamburger {
+  width: 2rem;
+  height: 2rem;
+}
+
+@media only screen and (max-width: 920px) {
+  .Navbar {
+    position: fixed;
+    top: 10vh;
+    width: 100vw;
+    height: 16vh;
+  }
+  .navbar-options {
+    display: none;
+  }
+
+  .navbar-options.expanded {
+    display: flex;
+    position: fixed;
+    top: 26vh;
+    left: 0;
+    height: 77vh;
+    width: 100vw;
+    padding: 0 0 10vh;
+    background-color: var(--talo-green);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+  }
+
+  #menu-trigger {
+    display: block;
+  }
+}
+
+
+
+

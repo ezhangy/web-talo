@@ -7,19 +7,29 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import HomePage from './pages/HomePage';
-import Navbar from './Navbar';
+import ElectionInfoPage from './pages/ElectionInfoPage';
 import FAQPage from './pages/FAQPage';
+import PressPage from './pages/PressPage';
+import Root from './Root';
 
 const router = createBrowserRouter([
   {
       path: "/",
-      element: <Navbar />,
+      element: <Root />,
       children: [
           { index: true, element: <HomePage />},
           {
-              path: "/faq",
-              element: <FAQPage />
+            path: "/faq",
+            element: <FAQPage />
           },
+          {
+            path: "/press",
+            element: <PressPage />
+          },
+          {
+            path: "/election-info",
+            element: <ElectionInfoPage />
+          }
       ],
   },
 ])

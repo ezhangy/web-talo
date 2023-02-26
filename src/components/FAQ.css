@@ -12,12 +12,14 @@
 .faq-question {
   width: 100%;
   background-color: transparent;
+  color: var(--talo-green);
   text-align: left;
-  color: black;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
   font-size: 1.8rem;
   font-weight: 600;
   padding: 1rem 0;
-  border-bottom: 0.08rem solid var(--main-accent-color);
+  border-bottom: 0.08rem solid var(--talo-green);
   border-radius: 0;
 }
 

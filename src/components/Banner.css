@@ -1,0 +1,20 @@
+.Banner {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: var(--banner-color);
+  color: var(--dark-green)
+}
+
+@media only screen and (max-width: 920px) {
+  .Banner {
+    position: fixed;
+    top: 0;
+    height: 10vh;
+
+  }
+}

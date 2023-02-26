@@ -32,7 +32,7 @@ const createFaqObjects = (tokens) => {
   }
 
   tokens.forEach((token, index) => {
-    if (token.type === "heading" && token.depth === 1) {
+    if (token.type === "heading" && token.depth === 2) {
       faqIndex += 1;
       faqObjects.push({
         id: faqIndex,
