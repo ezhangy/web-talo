@@ -1,13 +1,17 @@
 import Navbar from "./components/Navbar"
 import { Outlet } from "react-router-dom"
 import Banner from "./components/Banner"
+import Footer from "./components/Footer"
 
 const Root = () => {
   return (
     <>
-      <Banner />
+        <Banner />
         <Navbar />
-        <Outlet />
+        <div className="page-wrapper">
+          <Outlet />
+          <Footer />
+        </div>
     </>
   )
 }

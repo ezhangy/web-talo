@@ -11,6 +11,9 @@ import ElectionInfoPage from './pages/ElectionInfoPage';
 import FAQPage from './pages/FAQPage';
 import PressPage from './pages/PressPage';
 import Root from './Root';
+import PressRelease from './components/PressRelease';
+
+import decFifthPR from "./markdown/press-releases/2022-12-05.md"
 
 const router = createBrowserRouter([
   {
@@ -29,6 +32,13 @@ const router = createBrowserRouter([
           {
             path: "/election-info",
             element: <ElectionInfoPage />
+          },
+          {
+            path: "/press/releases/2022-12-05",
+            element: <PressRelease 
+                markdownFilePath={decFifthPR}
+                date={"December 5, 2022"}
+              />
           }
       ],
   },

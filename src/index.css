@@ -42,6 +42,8 @@ body {
   --navbar-color: #015855a8;
   --dark-green: #2F4F4F;
   --banner-color: #b6ece4;
+  --navbar-height: 12vh;
+  --banner-height: 7vh;
 }
 
 h1 {
@@ -51,6 +53,8 @@ h1 {
 
 h2 {
   font-size: 1.8rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
 }
 
 h2, p {
@@ -61,11 +65,22 @@ h2, p {
   display: flex;
   flex-direction: column;
   max-width: 100%;
+  min-height: calc(100vh - var(--banner-height) - var(--navbar-height));
+}
+
+.page-body { 
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
   gap: 2rem;
   padding: 4rem 9rem;
 }
 
+
+
 button {
+  cursor: pointer;
   background-color: var(--talo-green);
   width: fit-content;
   font-size: 1.2rem;
@@ -81,16 +96,25 @@ button {
   gap: 1rem;
 }
 
-ul {
-
-}
 
 ul li {
   line-height: 150%;
   margin-block-end: 0.5em;
 }
 
+a {
+  color: var(--dark-green)
 
-#root {
-  height: 100vh;
+}
+
+
+@media only screen and (max-width: 920px) {
+  .page-wrapper {
+    position: relative;
+    top: 18vh;
+  }
+
+  .page-body {
+    padding: 1rem 2rem;
+  }
 }

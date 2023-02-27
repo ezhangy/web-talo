@@ -1,8 +1,10 @@
 .Navbar {
+  z-index: 1;
   display: flex;
   background-color: var(--talo-green);
   justify-content: space-between;
   align-items: center;
+  height: var(--navbar-height);
   font-size: 1.2rem;
   border-bottom: 0.15rem solid var(--navbar-color);
   padding: 0.5rem 2rem;
@@ -30,22 +32,16 @@
   padding-right: 4em;
 }
 
-#menu-trigger {
+.MobileMenuButton {
   display: none;
-  padding: 0;
-}
-
-#hamburger {
-  width: 2rem;
-  height: 2rem;
 }
 
 @media only screen and (max-width: 920px) {
   .Navbar {
     position: fixed;
-    top: 10vh;
+    top: var(--banner-height);
     width: 100vw;
-    height: 16vh;
+    padding: 0.5rem 1rem;
   }
   .navbar-options {
     display: none;
@@ -54,22 +50,35 @@
   .navbar-options.expanded {
     display: flex;
     position: fixed;
-    top: 26vh;
+    top: calc(var(--banner-height) + var(--navbar-height));
     left: 0;
-    height: 77vh;
+    height: calc(100vh - var(--banner-height) - var(--navbar-height));
     width: 100vw;
-    padding: 0 0 10vh;
     background-color: var(--talo-green);
     flex-direction: column;
+    padding: 0 0 10vh 0;
     justify-content: center;
     align-items: center;
     font-size: 2rem;
   }
 
-  #menu-trigger {
+  .Navbar #navbar-logo-option {
+    max-width: 5rem;
+    max-height: 5rem;
+  }
+
+  .MobileMenuButton {
     display: block;
   }
+
+  #hamburger {
+    width: 2rem; 
+    height: 2rem;
+  }
 }
+
+
+
 
 
 

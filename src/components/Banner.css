@@ -4,6 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  height: var(--banner-height);
   padding: 0.5rem 1rem;
   font-size: 1rem;
   background-color: var(--banner-color);
@@ -13,8 +14,8 @@
 @media only screen and (max-width: 920px) {
   .Banner {
     position: fixed;
+    z-index: 1;
     top: 0;
-    height: 10vh;
-
+    width: 100vw;
   }
 }

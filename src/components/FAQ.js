@@ -7,7 +7,7 @@ const FAQ = ( { questionText, answerMarkdown }) => {
 
 
   const handleClick = () => {
-    setIsOpen((prev) => !prev);
+    setIsOpen(!isOpen);
   };
 
   return (

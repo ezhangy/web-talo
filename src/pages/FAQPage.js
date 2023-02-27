@@ -60,7 +60,7 @@ const FAQPage = () => {
   }, [])
 
   return (
-    <div className="page-wrapper">
+    <div className="page-body">
         <h1>Frequently Asked Questions</h1>
         {faqObjects.map((faqObj) => (
           <FAQ

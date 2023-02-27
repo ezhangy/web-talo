@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Banner.css"
 
 const Banner = () => {
@@ -13,7 +14,7 @@ const Banner = () => {
 
   return (
     <div className="Banner">
-        <p>There are only <strong>{timeLeft}</strong> until the the TA Union Election!! on Thursday 3/2 from 12PM-3PM and 5PM-8PM</p>
+        <p>There are only <strong>{timeLeft}</strong> until the the Union Election on Thu 3/2!! <Link to="/election-info"><b>Learn More</b></Link></p>
     </div>
   )
 }
