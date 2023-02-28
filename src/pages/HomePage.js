@@ -6,7 +6,7 @@ import { Helmet } from "react-helmet"
 
 const HomePage = () => (
   <>
-    <Helmet htmlAttributes>
+    <Helmet>
       <title>Home - Brown CS TA Labor Organization</title>
       <meta 
         name="description" 
