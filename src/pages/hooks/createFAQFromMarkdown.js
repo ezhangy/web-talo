@@ -45,7 +45,7 @@ const createFaqObjects = (tokens) => {
   return faqObjects
 }
 
-const useCreateFAQFromMarkdown = (markdownFilepath) => {
+const createFAQFromMarkdown = (markdownFilepath) => {
   const [faqObjects, setFaqObjects] = useState([])
 
   useEffect(() => {
@@ -60,5 +60,5 @@ const useCreateFAQFromMarkdown = (markdownFilepath) => {
   return faqObjects
 }
 
-export default useCreateFAQFromMarkdown
+export default createFAQFromMarkdown
 

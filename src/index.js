@@ -12,8 +12,24 @@ import FAQPage from './pages/FAQPage';
 import PressPage from './pages/PressPage';
 import Root from './Root';
 import PressRelease from './components/PressRelease';
+import dec5Release from "./markdown/press-release/2022-12-05.md"
+import electionFAQ from "./markdown/electionFAQ.md"
+import generalFAQ from "./markdown/electionFAQ.md"
+import links from "./markdown/links.md"
 
-import decFifthPR from "./markdown/press-releases/2022-12-05.md"
+let FAQtext;
+let dec5ReleaseText;
+let electionFAQObjs;
+let generalFAQObjs;
+let linksText;
+
+
+const loadMarkdownFiles = () => {
+  electionFAQObjs = useCreateFAQFromMarkdown(electionFAQ)
+  generalFAQObjs = useCreateFAQFromMarkdown(generalFAQ)
+  linkstext = useMarkdown(links)
+  dec5ReleaseText = useMarkdown(dec5Release)
+}
 
 const router = createBrowserRouter([
   {
@@ -23,26 +39,27 @@ const router = createBrowserRouter([
           { index: true, element: <HomePage />},
           {
             path: "/faq",
-            element: <FAQPage />
+            element: <FAQPage md={{faq:FAQMd}}/>
           },
           {
             path: "/press",
-            element: <PressPage />
+            element: <PressPage md={{links:linksMd}}/>
           },
           {
             path: "/election-info",
-            element: <ElectionInfoPage />
+            element: <ElectionInfoPage md={{faq:electionFAQMd}}/>
           },
           {
             path: "/press/releases/2022-12-05",
             element: <PressRelease 
-                markdownFilePath={decFifthPR}
+                md={{release: dec5PressReleaseMd}}
                 date={"December 5, 2022"}
               />
           }
       ],
   },
 ])
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 <React.StrictMode>

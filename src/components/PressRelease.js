@@ -1,5 +1,5 @@
 import { ReactMarkdown } from "react-markdown/lib/react-markdown"
-import useMarkdown from "../pages/hooks/useMarkdown"
+import useMarkdown from "../pages/hooks/createMarkdown"
 import "./PressRelease.css"
 
 const PressRelease = ({ markdownFilePath, date }) => {

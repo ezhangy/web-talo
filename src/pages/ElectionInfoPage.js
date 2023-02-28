@@ -5,7 +5,7 @@ import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 import { useVoteData } from "../components/vote-count/useVoteData";
 import VoteCountSection from "../components/VoteCountSection";
 import electionFAQFile from "../markdown/electionFAQ.md"
-import useCreateFAQFromMarkdown from "./hooks/useCreateFAQFromMarkdown";
+import useCreateFAQFromMarkdown from "./hooks/createFAQFromMarkdown";
 import FAQ from "../components/FAQ";
 
 const ElectionInfoPage = () => {

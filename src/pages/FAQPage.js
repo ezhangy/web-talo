@@ -3,11 +3,11 @@ import "./FAQPage.css"
 import { Helmet } from "react-helmet"
 import FAQ from "../components/FAQ"
 import faqMarkdownFile from "../markdown/FAQ.md"
-import useCreateFAQFromMarkdown from "./hooks/useCreateFAQFromMarkdown"
+import useCreateFAQFromMarkdown from "./hooks/createFAQFromMarkdown"
 
 const FAQPage = () => {
   const faqObjects = useCreateFAQFromMarkdown(faqMarkdownFile)
-  return (
+  return (!faqObjects) ? null :(
     <>
       <Helmet>
         <title>Frequently Asked Questions - Brown CS TA Labor Organization</title>
