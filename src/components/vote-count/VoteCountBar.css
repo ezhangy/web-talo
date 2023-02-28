@@ -1,6 +1,5 @@
 /* adapted from NYT Tech Guild's site https://github.com/newsguildny/nytimesguild.org/blob/4e9e5cbfabaf59e255997542acdfd92db74c4599/src/components/vote-count/VoteCountBar.tsx */
 
-
 .VoteCountBar {
   padding: 1rem 0;
 }
@@ -26,12 +25,12 @@
 .win-label {
   position: absolute;
   text-align: center;
-  color: var(--dark-green)
+  color: var(--dark-green);
 }
 
 .no-label {
   padding: 0 0 1rem;
-  color: var(--vote-no-color)
+  color: var(--vote-no-color);
 }
 .yes-count,
 .no-count,
