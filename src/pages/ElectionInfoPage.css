@@ -1,0 +1,100 @@
+/* from https://github.com/newsguildny/nytimesguild.org/blob/4e9e5cbfabaf59e255997542acdfd92db74c4599/src/pages/tech-vote-count.tsx */
+.ElectionInfoPage table {
+  align-self: center;
+  border-collapse: collapse;
+  font-weight: 600;
+  width: 100%;
+  padding: 1rem 0rem;
+}
+
+.ElectionInfoPage th {
+  padding: 0.5rem 1rem;
+}
+
+.ElectionInfoPage td {
+  padding: 1rem;
+  border-top: solid thin var(--table-border-color);
+  border-bottom: solid thin var(--table-border-color);
+}
+
+.ElectionInfoPage td:first-of-type {
+  border-left: solid thin var(--table-border-color);
+}
+
+.ElectionInfoPage td:last-of-type {
+  border-right: solid thin var(--table-border-color);
+}
+
+.ElectionInfoPage td.yes-cell {
+  border-left: solid 0.25rem var(--vote-yes-color);
+  color: var(--vote-yes-color);
+}
+
+.ElectionInfoPage td.no-cell {
+  border-left: solid 0.25rem var(--vote-no-color);
+  color: var(--vote-no-color);
+}
+
+.ElectionInfoPage .category-column {
+  width: calc(100% - 20rem);
+  font-weight: 700;
+}
+
+.ElectionInfoPage .number-column {
+  width: 10rem;
+  text-align: right;
+}
+
+.ElectionInfoPage .drop-on-mobile {
+  display: none;
+}
+
+.ElectionInfoPage .electionFAQ {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.ElectionInfoPage .faq-question {
+  color: var(--talo-green);
+  font-style: italic;
+  font-weight: 600;
+}
+
+.ElectionInfoPage .note {
+  font-style: italic;
+  font-weight: 500;
+}
+
+
+.ElectionInfoPage #result-status {
+  position: relative;
+  bottom: 0.15em;
+  margin-left: 0.75em;
+  height: 2em;
+  padding: .3em .75em;
+  vertical-align: middle;
+  background-color: var(--banner-color);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',   
+  'Oxygen','Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: normal;
+  color: var(--dark-green);
+  border: 0.1em solid var(--dark-green);
+  border-radius: 1em;
+}
+
+.ElectionInfoPage #vote-count-header {
+  vertical-align: middle;
+}
+
+@media (min-width: 720px) {
+  .ElectionInfoPage .drop-on-mobile {
+    display: inline;
+  }
+}
+
+
+
