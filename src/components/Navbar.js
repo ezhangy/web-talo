@@ -11,7 +11,6 @@ const Navbar = () => {
   
   const handleClick = () => {
     setIsMenuExpanded(!isMenuExpanded)
-    console.log("handle click")
   }
 
   return (

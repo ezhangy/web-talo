@@ -32,9 +32,7 @@ function getVoteStatus({
 }
 
 function updater(db, path, onUpdate) {
-  console.log("called updater")
   onValue(ref(db, path), (snapshot) => {
-    console.log("in onValue")
     const data = snapshot.val();
     if (typeof data === 'number') {
       onUpdate(data);
