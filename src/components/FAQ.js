@@ -1,9 +1,9 @@
-import "./FAQ.css"
-import { ReactMarkdown } from "react-markdown/lib/react-markdown"
-import { useState } from "react"
+import { useState } from 'react';
+import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
+import './FAQ.css';
 
 const ExpandableFAQ = ({ questionText, answerMarkdown }) => {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleClick = () => {
     setIsOpen(!isOpen);
@@ -11,43 +11,40 @@ const ExpandableFAQ = ({ questionText, answerMarkdown }) => {
 
   return (
     <>
-      <button 
-        className={`faq-question ${isOpen ? "active" : ""}`}
+      <button
+        className={`faq-question ${isOpen ? 'active' : ''}`}
         onClick={handleClick}
       >
-      {questionText}
+        {questionText}
       </button>
-        
-      {isOpen 
-      ? (<ReactMarkdown 
-          children={answerMarkdown}
-          className="faq-answer"
-        />)
-      : (<></>)
-      }
+
+      {isOpen ? (
+        <ReactMarkdown children={answerMarkdown} className="faq-answer" />
+      ) : (
+        <></>
+      )}
     </>
-)}
+  );
+};
 
-
-const FAQ = ( { isExpandable, questionText, answerMarkdown }) => {
+const FAQ = ({ isExpandable, questionText, answerMarkdown }) => {
   return (
-  <div className="faq">
-    {isExpandable 
-      ? <ExpandableFAQ 
+    <div className="faq">
+      {isExpandable ? (
+        <ExpandableFAQ
           questionText={questionText}
           answerMarkdown={answerMarkdown}
         />
-      : (<>
+      ) : (
+        <>
           <p className="faq-question">{questionText}</p>
-          <p className="faq-answer"> 
-            <ReactMarkdown 
-              children={answerMarkdown}
-              className="faq-answer"
-            />
+          <p className="faq-answer">
+            <ReactMarkdown children={answerMarkdown} className="faq-answer" />
           </p>
-        </>)
-    }
-  </div>
-)}
+        </>
+      )}
+    </div>
+  );
+};
 
-export default FAQ; 
+export default FAQ;
