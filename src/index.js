@@ -12,8 +12,9 @@ import FAQPage from './pages/FAQPage';
 import PressPage from './pages/PressPage';
 import Root from './Root';
 import PressRelease from './components/PressRelease';
+import decFifthPR from "./markdown/press-releases/2022-12-05.md";
 
-import decFifthPR from "./markdown/press-releases/2022-12-05.md"
+
 
 const router = createBrowserRouter([
   {
@@ -43,6 +44,7 @@ const router = createBrowserRouter([
       ],
   },
 ])
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 <React.StrictMode>
