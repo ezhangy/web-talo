@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import { initializeApp } from 'firebase/app';
-import { Database, getDatabase, ref, onValue, get, child } from 'firebase/database';
+import { getDatabase, ref, onValue } from 'firebase/database';
 
 
-// adaptedfrom https://github.com/newsguildny/nytimesguild.org/commit/4e9e5cbfabaf59e255997542acdfd92db74c4599
+// adapted from https://github.com/newsguildny/nytimesguild.org/commit/4e9e5cbfabaf59e255997542acdfd92db74c4599
 export function formatPercentage(numerator, denominator) {
   return denominator ? `${Math.round((numerator / denominator) * 100)}%` : '--%';
 }

@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <div className="Navbar">
-      <img id="navbar-logo-option" src={logo}/>
+      <img id="navbar-logo-option" src={logo} alt="union logo"/>
       <MobileMenuButton 
         isMenuExpanded={isMenuExpanded} 
         handleClick={handleClick} 
@@ -28,8 +28,8 @@ const Navbar = () => {
         }>
         <NavLink to={`/`} onClick={handleClick}>Home</NavLink>
         <NavLink to={`/faq`} onClick={handleClick}>FAQ</NavLink>
+        <NavLink to={`/election-info`} onClick={handleClick}>Election</NavLink>
         <NavLink to={`/press`} onClick={handleClick}>Press</NavLink>
-        <NavLink to={`/election-info`} onClick={handleClick}>Election Info</NavLink>
       </div>
     </div>
   )
