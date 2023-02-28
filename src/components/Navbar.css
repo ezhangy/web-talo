@@ -10,13 +10,18 @@
   padding: 0.5rem 2rem;
 }
 
-.Navbar .active{
-  color: white;
+.Navbar .navbar-options .active{
+  opacity: 100%;
   font-weight: bolder;
 }
 
-.Navbar a {
-  color: rgba(255, 253, 253, 0.728);
+.Navbar .navbar-options a:hover {
+  opacity: 90%;
+}
+
+.Navbar .navbar-options a {
+  color: white;
+  opacity: 70%;
   font-weight: 400;
   text-decoration: none;
 }

@@ -6,12 +6,15 @@ import Footer from "./components/Footer"
 const Root = () => {
   return (
     <>
+      <a hidden href="#maincontent" className="screenreader-text">
+        Skip to main content
+      </a>
         <Banner />
-        <Navbar />
-        <div className="page-wrapper">
-          <Outlet />
-          <Footer />
-        </div>
+      <Navbar />
+      <div className="page-wrapper">
+        <Outlet />
+        <Footer />
+      </div>
     </>
   )
 }

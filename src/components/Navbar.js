@@ -5,6 +5,7 @@ import MobileMenuButton from "./MobileMenuButton"
 import { useState } from "react"
 
 
+
 const Navbar = () => {
   const [isMenuExpanded, setIsMenuExpanded] = useState(false)
   
@@ -14,13 +15,15 @@ const Navbar = () => {
   }
 
   return (
-    <div className="Navbar">
-      <img id="navbar-logo-option" src={logo} alt="union logo"/>
+    <banner className="Navbar">
+      <NavLink to={`/`}>
+        <img id="navbar-logo-option" src={logo} alt="union logo"/>
+      </NavLink>
       <MobileMenuButton 
         isMenuExpanded={isMenuExpanded} 
         handleClick={handleClick} 
       />
-      <div className={
+      <nav className={
           `navbar-options ${isMenuExpanded 
             ? "expanded"
             : ""
@@ -30,8 +33,8 @@ const Navbar = () => {
         <NavLink to={`/faq`} onClick={handleClick}>FAQ</NavLink>
         <NavLink to={`/election-info`} onClick={handleClick}>Election</NavLink>
         <NavLink to={`/press`} onClick={handleClick}>Press</NavLink>
-      </div>
-    </div>
+      </nav>
+    </banner>
   )
 }
 

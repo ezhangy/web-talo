@@ -1,6 +1,4 @@
 /* from https://github.com/newsguildny/nytimesguild.org/blob/4e9e5cbfabaf59e255997542acdfd92db74c4599/src/pages/tech-vote-count.tsx */
-
-
 .ElectionInfoPage table {
   align-self: center;
   border-collapse: collapse;
@@ -58,7 +56,9 @@
 }
 
 .ElectionInfoPage .faq-question {
-  font-weight: bold;
+  color: var(--talo-green);
+  font-style: italic;
+  font-weight: 600;
 }
 
 .ElectionInfoPage .note {
