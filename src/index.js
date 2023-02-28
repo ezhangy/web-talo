@@ -9,7 +9,6 @@ import HomePage from './pages/HomePage';
 import PressPage from './pages/PressPage';
 import reportWebVitals from './reportWebVitals';
 import Root from './Root';
-
 import decFifthPR from './markdown/press-releases/2022-12-05.md';
 
 const router = createBrowserRouter([
