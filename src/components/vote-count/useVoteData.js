@@ -1,29 +1,24 @@
-import { useEffect, useState } from 'react';
 import { initializeApp } from 'firebase/app';
-import { getDatabase, ref, onValue } from 'firebase/database';
-
+import { getDatabase, onValue, ref } from 'firebase/database';
+import { useEffect, useState } from 'react';
 
 // adapted from https://github.com/newsguildny/nytimesguild.org/commit/4e9e5cbfabaf59e255997542acdfd92db74c4599
 export function formatPercentage(numerator, denominator) {
-  return denominator ? `${Math.round((numerator / denominator) * 100)}%` : '--%';
+  return denominator
+    ? `${Math.round((numerator / denominator) * 100)}%`
+    : '--%';
 }
 
 export const firebaseConfig = {
-  apiKey: "AIzaSyCOWkvRbk3CsOkiEP1M4uU3mRimN916BdU",
-  authDomain: "talo-vote-count.firebaseapp.com",
-  projectId: "talo-vote-count",
-  storageBucket: "talo-vote-count.appspot.com",
-  messagingSenderId: "816540672640",
-  appId: "1:816540672640:web:9c9143b79230ca178bbc65"
+  apiKey: 'AIzaSyCOWkvRbk3CsOkiEP1M4uU3mRimN916BdU',
+  authDomain: 'talo-vote-count.firebaseapp.com',
+  projectId: 'talo-vote-count',
+  storageBucket: 'talo-vote-count.appspot.com',
+  messagingSenderId: '816540672640',
+  appId: '1:816540672640:web:9c9143b79230ca178bbc65',
 };
 
-function getVoteStatus({
-  yes,
-  no,
-  total,
-  contested,
-  neededToWin,
-}) {
+function getVoteStatus({ yes, no, total, contested, neededToWin }) {
   if (total === 0) return 'loading';
   if (yes + no + contested === total && contested > 0) return 'contested';
   if (yes >= neededToWin) return 'win';
