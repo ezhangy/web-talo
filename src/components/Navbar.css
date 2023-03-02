@@ -44,7 +44,7 @@
 @media only screen and (max-width: 920px) {
   .Navbar {
     position: fixed;
-    top: var(--banner-height);
+    top: var(--mobile-banner-height);
     width: 100vw;
     padding: 0.5rem 1rem;
   }
@@ -55,9 +55,9 @@
   .navbar-options.expanded {
     display: flex;
     position: fixed;
-    top: calc(var(--banner-height) + var(--navbar-height));
+    top: calc(var(--mobile-banner-height) + var(--navbar-height));
     left: 0;
-    height: calc(100vh - var(--banner-height) - var(--navbar-height));
+    height: calc(100vh - var(--mobile-banner-height) - var(--navbar-height));
     width: 100vw;
     background-color: var(--talo-green);
     flex-direction: column;
@@ -81,3 +81,5 @@
     height: 2rem;
   }
 }
+
+
