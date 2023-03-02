@@ -3,11 +3,11 @@ const ELECTIION_LIVECOUNT_START = new Date('Thursday March 2, 2023 20:00:00');
 const ELECTION_PAST = new Date('Friday March 3, 2023 0:00:00');
 
 
-const timeUntil= (startTime, eventTime) => {
-  return eventTime - startTime
+const timeUntil= (startTime: Date, eventTime: Date) => {
+  return eventTime.getTime() - startTime.getTime()
 }
 
-export const getCountDownVals = (currTime) => {
+export const getCountDownVals = (currTime: Date) => {
   const distance = timeUntil(currTime, ELECTION_START_TIME)
   const daysUntilElection = Math.floor(distance / (1000 * 60 * 60 * 24));
   const hoursUntilElection = (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
@@ -16,8 +16,3 @@ export const getCountDownVals = (currTime) => {
 
   return {daysUntilElection, hoursUntilElection, hasLiveCountStarted, isElectionPast}
 }
-  // const timeLeft =
-  //   daysLeft > 0 
-  //   ? <>{daysLeft} days left</> 
-  //   : hoursLeft > 1 ? <>{Math.ceil(hoursLeft)} hours left</>
-  //   : hoursLeft < 0 ? <></>

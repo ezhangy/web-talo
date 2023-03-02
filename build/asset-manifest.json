@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/web-talo/static/css/main.9db965f4.css",
+    "main.js": "/web-talo/static/js/main.b9275ce0.js",
+    "static/js/787.2597a646.chunk.js": "/web-talo/static/js/787.2597a646.chunk.js",
+    "static/media/banner.jpg": "/web-talo/static/media/banner.38edbe9553c576f231ee.jpg",
+    "static/media/logo.png": "/web-talo/static/media/logo.cacadfab01924c7ebe4d.png",
+    "static/media/FAQ.md": "/web-talo/static/media/FAQ.9aa6ce183d184c775c28.md",
+    "static/media/2022-12-05.md": "/web-talo/static/media/2022-12-05.6232a5c6e30a535573b6.md",
+    "static/media/electionFAQ.md": "/web-talo/static/media/electionFAQ.001d7afdc78e75a965ed.md",
+    "static/media/instagram.svg": "/web-talo/static/media/instagram.9ef66bd143b6d36ee79afa0905ebd936.svg",
+    "static/media/links.md": "/web-talo/static/media/links.eada266479118380a815.md",
+    "index.html": "/web-talo/index.html",
+    "static/media/envelope-regular.svg": "/web-talo/static/media/envelope-regular.b0ae42faff7742568b13239d6238a327.svg",
+    "static/media/tiktok.svg": "/web-talo/static/media/tiktok.6aab752ce977e371f306ebc96c9c28cc.svg",
+    "main.9db965f4.css.map": "/web-talo/static/css/main.9db965f4.css.map",
+    "main.b9275ce0.js.map": "/web-talo/static/js/main.b9275ce0.js.map",
+    "787.2597a646.chunk.js.map": "/web-talo/static/js/787.2597a646.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9db965f4.css",
+    "static/js/main.b9275ce0.js"
+  ]
+}
