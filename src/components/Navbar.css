@@ -10,7 +10,7 @@
   padding: 0.5rem 2rem;
 }
 
-.Navbar .navbar-options .active{
+.Navbar .navbar-options .active {
   opacity: 100%;
   font-weight: bolder;
 }
@@ -77,14 +77,7 @@
   }
 
   #hamburger {
-    width: 2rem; 
+    width: 2rem;
     height: 2rem;
   }
 }
-
-
-
-
-
-
-

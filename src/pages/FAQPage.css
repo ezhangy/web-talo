@@ -16,24 +16,24 @@
 }
 
 .FAQPage .faq {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
-  
+
 .FAQPage .faq-question:hover {
   opacity: 50%;
 }
 
 .FAQPage .faq-question::after {
-  content: "+";
+  content: '+';
   font-size: 1.75rem;
   margin-right: 1rem;
   display: block;
 }
 
 .FAQPage .faq .active::after {
-  content: "-";
+  content: '-';
 }
 
 .FAQPage .faq-answer {
