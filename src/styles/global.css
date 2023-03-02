@@ -83,8 +83,10 @@ p {
   flex: 1 0 auto;
   display: flex;
   flex-direction: column;
-  max-width: 100%;
-  padding: 4rem 9rem;
+  @apply max-w-5xl;
+  @apply m-auto;
+  @apply py-12;
+  @apply px-6;
   gap: 1rem;
 }
 
@@ -163,14 +165,4 @@ a {
 #logo {
   width: 14rem;
   height: 14rem;
-}
-
-.HomePage button:hover {
-  opacity: 80%;
-}
-
-@media only screen and (max-width: 920px) {
-  .HomePage #logo {
-    display: none;
-  }
 }
