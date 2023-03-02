@@ -4,3 +4,7 @@ http://talounion.netlify.app/*    https://talounion.org/:splat    301!
 
 # Press Release (only moved link)
 /press/2022-12-05.html  /press/releases/2022-12-05  301
+
+http://talo.fyi/*  https://talo.fyi/*
+https://talo.fyi/election/  https://talounion.org/election-info/
+https://talo.fyi/*  https://talounion.org/:splat   301!
