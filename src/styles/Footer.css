@@ -1,0 +1,36 @@
+.Footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 2rem 2rem;
+  gap: 3rem;
+  background-color: var(--talo-green);
+}
+
+.Footer .social-media-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.25rem;
+  color: white;
+  text-decoration: none;
+}
+
+.Footer .social-media-link:hover {
+  cursor: pointer;
+  opacity: 50%;
+}
+
+.Footer .social-media-icon {
+  display: inline;
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+@media only screen and (max-width: 920px) {
+  .Footer {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+}
