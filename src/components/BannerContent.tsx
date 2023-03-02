@@ -8,17 +8,7 @@ const Banner = () => {
   const timeLeft =
     daysLeft > 0 ? <>{daysLeft} days left</> : <>{hoursLeft} hours left</>;
 
-  return (
-    <div className="Banner">
-      <p>
-        There are only <strong>{timeLeft}</strong> until the the Union Election
-        on Thu 3/2!!{' '}
-        <a href="/election-info">
-          <b>Election Info</b>
-        </a>
-      </p>
-    </div>
-  );
+  return <strong>{timeLeft}</strong>;
 };
 
 export default Banner;
