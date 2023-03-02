@@ -1,8 +1,0 @@
-# From Netlify sites
-https://talounion.netlify.app/*   https://talounion.org/:splat    301!
-http://talounion.netlify.app/*    https://talounion.org/:splat    301!
-
-# Press Release (only moved link)
-/press/2022-12-05.html  /press/releases/2022-12-05  301
-
-/*    /index.html   200
