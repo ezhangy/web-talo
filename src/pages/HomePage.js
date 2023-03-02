@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import bannerImg from "../assets/images/banner.jpg"
 import logo from "../assets/images/logo.png"
-import "./HomePage.css"
+import "./HomePage.module.css"
 import { Helmet } from "react-helmet"
 
 const HomePage = () => (

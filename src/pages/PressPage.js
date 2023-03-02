@@ -1,4 +1,4 @@
-import "./PressPage.css"
+import "./PressPage.module.css"
 
 import { Helmet } from "react-helmet"
 import { ReactMarkdown } from "react-markdown/lib/react-markdown"

@@ -1,4 +1,4 @@
-import "./FAQPage.css"
+import "./FAQPage.module.css"
 
 import { Helmet } from "react-helmet"
 import FAQ from "../components/FAQ"
