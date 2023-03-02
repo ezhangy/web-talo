@@ -1,3 +1,5 @@
+import '@styles/Banner.css';
+
 const Banner = () => {
   const electionDate = new Date('Thursday March 2, 2023 12:00:00');
   const distance = electionDate.getTime() - new Date().getTime();
