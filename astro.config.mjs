@@ -13,7 +13,10 @@ import mdx from '@astrojs/mdx';
 import prefetch from "@astrojs/prefetch";
 
 // https://astro.build/config
+import sitemap from "@astrojs/sitemap";
+
+// https://astro.build/config
 export default defineConfig({
   site: 'https://talounion.org/',
-  integrations: [tailwind(), react(), mdx(), prefetch()]
+  integrations: [tailwind(), react(), mdx(), prefetch(), sitemap()]
 });
