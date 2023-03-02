@@ -1,0 +1,13 @@
+---
+import FAQ from './FAQ';
+
+export interface Props {
+  question: string;
+}
+
+const { question } = Astro.props;
+---
+
+<FAQ question={question} client:load>
+  <slot />
+</FAQ>
