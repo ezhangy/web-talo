@@ -29,7 +29,7 @@ const description = frontmatter.description
     <BaseHead title={title} description={description} />
   </head>
   <body>
-    <Banner client:load />
+    <Banner client:only="react" />
     <Nav />
     <div class="page-wrapper">
       <main class="page-body">
