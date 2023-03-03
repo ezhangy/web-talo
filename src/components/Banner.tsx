@@ -57,11 +57,12 @@ const Banner = () => {
   } else {
     bannerText = (
       <p>
-        Our election to unionize took place on Thursday, March 2. 👉
+        On Thursday, March 2 the NRLB officially certified our union  👉
         {' '}
         <a href="/election-info">
           <b>see the results</b>
         </a>
+        {' '}
       </p>)
   }
 
@@ -70,10 +71,10 @@ const Banner = () => {
   if (resultReached && !isElectionPast) {
     bannerText =
     (<p>
-        The results of our union election are out now.
+        🎉🎉 Brown CS TAs have voted YES to unionize in a 303-28 victory 🎉🎉
         {' '}
         <a href="/election-info">
-          <b>Vote count.</b>
+          <b>see the results</b>
         </a>
       </p>)
   }

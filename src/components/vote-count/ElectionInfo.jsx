@@ -4,7 +4,7 @@ import '@styles/ElectionInfoPage.css';
 import { getCountDownVals } from '@components/vote-count/countDownUtil';
 
 const ElectionInfoPage = () => {
-  const { yes, no, contested, total, neededToWin, status } = useVoteData();
+  const yes = 303, no = 28, contested = 6, neededToWin = 169, total = 337
 
   // constants for live vote tracker
   const { 
@@ -16,11 +16,7 @@ const ElectionInfoPage = () => {
   
   const resultReached = status == "win" && status == "loss"
 
-  const resultStatus = !hasLiveCountStarted
-    ? 'coming soon'
-    : status === 'win'
-    ? 'win 🎉'
-    : 'live!'
+  const resultStatus = 'win 🎉'
 
   return (
     <div>
