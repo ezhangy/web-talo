@@ -10,7 +10,6 @@ const Banner = () => {
     hasLiveCountStarted, 
     isElectionPast
   } = getCountDownVals(new Date());
-  const { yes, no, contested, total, neededToWin, status } = useVoteData();
 
   let bannerText; 
   if (daysUntilElection > 0) {
@@ -57,23 +56,24 @@ const Banner = () => {
   } else {
     bannerText = (
       <p>
-        Our election to unionize took place on Thursday, March 2. 👉
+       🎉🎉 On Thursday 3/2, a majority of votes were counted in TALO's favor, 
+      officially certifying our union 🎉🎉
         {' '}
         <a href="/election-info">
-          <b>see the results</b>
+          <b>vote count</b>
         </a>
       </p>)
   }
 
-  const resultReached = status === "win" || status === "loss"
+  const resultReached = true
 
   if (resultReached && !isElectionPast) {
     bannerText =
     (<p>
-        The results of our union election are out now.
+        🎉🎉 Brown CS TAs have <b>voted YES</b> to unionize in a 303-28 victory 🎉🎉
         {' '}
         <a href="/election-info">
-          <b>Vote count.</b>
+          <b>see the results</b>
         </a>
       </p>)
   }
