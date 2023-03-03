@@ -10,7 +10,6 @@ const Banner = () => {
     hasLiveCountStarted, 
     isElectionPast
   } = getCountDownVals(new Date());
-  const { yes, no, contested, total, neededToWin, status } = useVoteData();
 
   let bannerText; 
   if (daysUntilElection > 0) {
@@ -57,21 +56,21 @@ const Banner = () => {
   } else {
     bannerText = (
       <p>
-        On Thursday, March 2 the NRLB officially certified our union  👉
+       🎉🎉 On Thursday 3/2, a majority of votes were counted in TALO's favor, 
+      officially certifying our union 🎉🎉
         {' '}
         <a href="/election-info">
-          <b>see the results</b>
+          <b>vote count</b>
         </a>
-        {' '}
       </p>)
   }
 
-  const resultReached = status === "win" || status === "loss"
+  const resultReached = true
 
   if (resultReached && !isElectionPast) {
     bannerText =
     (<p>
-        🎉🎉 Brown CS TAs have voted YES to unionize in a 303-28 victory 🎉🎉
+        🎉🎉 Brown CS TAs have <b>voted YES</b> to unionize in a 303-28 victory 🎉🎉
         {' '}
         <a href="/election-info">
           <b>see the results</b>

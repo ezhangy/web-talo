@@ -14,7 +14,7 @@ const ElectionInfoPage = () => {
     isElectionPast
   } = getCountDownVals(new Date());
   
-  const resultReached = status == "win" && status == "loss"
+  const resultReached = true
 
   const resultStatus = 'win 🎉'
 
