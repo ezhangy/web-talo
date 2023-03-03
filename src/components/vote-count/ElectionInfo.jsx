@@ -18,11 +18,9 @@ const ElectionInfoPage = () => {
 
   const resultStatus = !hasLiveCountStarted
     ? 'coming soon'
-    : status === 'loading'
-    ? 'coming soon'
-    : status === 'beforeResult'
-    ? 'live!'
-    : status;
+    : status === 'win'
+    ? 'win 🎉'
+    : 'live!'
 
   return (
     <div>
