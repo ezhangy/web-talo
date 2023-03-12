@@ -1,55 +1,44 @@
-# Astro Starter Kit: Basics
+# TALO Website
 
-```
-npm create astro@latest -- --template basics
-```
+[![Netlify Status](https://api.netlify.com/api/v1/badges/1783448f-3274-4da9-b260-189e8c09e931/deploy-status)](https://app.netlify.com/sites/talounion/deploys)
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+This is the website of TALO, Brown's CS TA Labor Organization. We're CS TA union at Brown University. 
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+This site is built using **Astro**, with **yarn** as the package manager. To contribute, feel free to read the instructions below! 
 
-![basics](https://user-images.githubusercontent.com/4677417/186188965-73453154-fdec-4d6b-9c34-cb35c248ae5b.png)
+## Structure
+**Astro** creates routes based on pages in the `src/pages` folder. Add `.astro` (mix of JavaScript and HTML) or `.mdx` (Markdown with JSX components) files to create new pages on the site. `src/components` contains components, some are TypeScript React and some are Astro components. `src/layouts` contains base layouts for pages. This includes the header, style, footer, nav bar components so your content can be directly included in. All styles are in `src/styles`. Components, layouts, assets, styles can be accessed using `@components`, `@layouts`, etc. 
 
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
+Here's an example file directory: 
 ```
 /
 ├── public/
-│   └── favicon.svg
+│   └── favicon.ico
 ├── src/
 │   ├── components/
 │   │   └── Card.astro
 │   ├── layouts/
-│   │   └── Layout.astro
+│   │   └── Base.astro
 │   └── pages/
 │       └── index.astro
 └── package.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
 ## 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:
 
-| Command                | Action                                           |
-| :--------------------- | :----------------------------------------------- |
-| `npm install`          | Installs dependencies                            |
-| `npm run dev`          | Starts local dev server at `localhost:3000`      |
-| `npm run build`        | Build your production site to `./dist/`          |
-| `npm run preview`      | Preview your build locally, before deploying     |
-| `npm run astro ...`    | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro --help` | Get help using the Astro CLI                     |
+| Command             | Action                                           |
+| :------------------ | :----------------------------------------------- |
+| `yarn install`      | Installs dependencies                            |
+| `yarn dev`          | Starts local dev server at `localhost:3000`      |
+| `yarn build`        | Build your production site to `./dist/`          |
+| `yarn preview`      | Preview your build locally, before deploying     |
+| `yarn astro ...`    | Run CLI commands like `astro add`, `astro check` |
+| `yarn astro --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
+Generally, running `yarn dev` will create a live version of the website as you make edits. 
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## Contributing
+
+We welcome pull requests! Pull requests are automatically deployed as a preview as well. Let us know if you have any questions! 
